@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Message</title>
+    <title>Anonymous Message</title>
     <style>
-      body
-      {
-        font-family: Arial, sans-serif;
-        background-color: #fff0f5;
-        text-align: center;
-        margin-top: 120px;
-      }
-      button 
-      {
-        padding: 15px 30px;
-        font-size: 18px;
-        border: none;
-        boreder-radius: 10px;
-        background-color: #ff4d6d;
-        color: white;
-        cursor: pointer;
-      }
-      button:hover 
-      {
-        background-color: #e63e5c;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            margin-top: 120px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff4d6d;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e63e5c;
+        }
     </style>
-  </head>
-  <body>
-    <h2>💌 You received a message</h2>
-    <p>WILL YOU BE MY VALENTINE?</p>
+</head>
+<body>
 
-    <button onclick="accept()">YES</button>
+    <h2>💌 You received an anonymous message</h2>
+    <p>Will you be my Valentine?</p>
+
+    <button id="yesBtn">YES</button>
+
     <p id="response"></p>
 
     <script>
-      function accept()
-      {
-        document.getElementById("respons").innerHTML = "MESSAGE RECEIVED.<br>Someone is smiling right now";
-      }
+        document.getElementById("yesBtn").addEventListener("click", function () {
+            document.getElementById("response").innerHTML =
+                "💖 Message received.<br>Someone is smiling right now 🙂";
+        });
     </script>
-  </body>
+
+</body>
 </html>
